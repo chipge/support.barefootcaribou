@@ -146,6 +146,11 @@ body {
   margin: 0;
   padding-left: 18px;
   color: var(--ink-soft);
+  line-height: 1.65;
+}
+
+.info-card li + li {
+  margin-top: 10px;
 }
 
 .steps {
@@ -166,6 +171,10 @@ body {
   padding-left: 20px;
   color: var(--ink-soft);
   line-height: 1.6;
+}
+
+.steps li + li {
+  margin-top: 8px;
 }
 
 .tip {
@@ -191,7 +200,7 @@ body {
 }
 
 .faq details {
-  padding: 12px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--border);
 }
 
@@ -205,8 +214,9 @@ body {
 }
 
 .faq p {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   color: var(--ink-soft);
+  line-height: 1.65;
 }
 
 .media {

@@ -1,6 +1,16 @@
 (() => {
   const chatTriggers = document.querySelectorAll("[data-live-chat-trigger]");
-  if (!chatTriggers.length) return;
+
+  const fab = document.createElement("button");
+  fab.className = "chat-fab";
+  fab.type = "button";
+  fab.setAttribute("aria-label", "Open live chat");
+  fab.innerHTML = `
+    <svg class="chat-fab-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 3c-5 0-9 3.4-9 7.7 0 2.5 1.4 4.7 3.7 6.1V21l4.1-2.2c.4.1.8.1 1.2.1 5 0 9-3.4 9-7.7S17 3 12 3z"></path>
+    </svg>
+  `;
+  document.body.appendChild(fab);
 
   const popup = document.createElement("aside");
   popup.className = "chat-popup";
@@ -33,6 +43,8 @@
   const closePopup = () => {
     popup.hidden = true;
   };
+
+  fab.addEventListener("click", openPopup);
 
   chatTriggers.forEach((trigger) => {
     trigger.addEventListener("click", (event) => {

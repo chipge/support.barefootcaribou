@@ -596,6 +596,84 @@ body {
 }
 
 @media (max-width: 680px) {
+  .page {
+    padding: 18px 14px 40px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    flex-wrap: wrap;
+  }
+
+  .brand-title {
+    font-size: 20px;
+  }
+
+  .brand-sub {
+    letter-spacing: 0.15em;
+  }
+
+  .hero,
+  .ticket-card,
+  .ticket-help,
+  .quick-card,
+  .support-form,
+  .faq,
+  .steps,
+  .media,
+  .page-hero {
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .hero {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 9vw, 36px);
+    margin-top: 0;
+  }
+
+  .ticket-section,
+  .products-support,
+  .quick-links {
+    margin-top: 24px;
+  }
+
+  .product-grid,
+  .quick-links,
+  .ticket-section,
+  .support-grid,
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer {
+    margin-top: 32px;
+    padding-top: 18px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -604,5 +682,22 @@ body {
   .button {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .ticket-actions {
+    flex-direction: column;
+  }
+
+  .product-overlay h3 {
+    font-size: 16px;
+    letter-spacing: 0.08em;
   }
 }

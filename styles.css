@@ -286,6 +286,7 @@ body {
 }
 
 .ticket-form input,
+.ticket-form select,
 .ticket-form textarea {
   padding: 12px 14px;
   border-radius: 12px;

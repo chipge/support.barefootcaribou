@@ -51,20 +51,42 @@
 
         <section class="support-form">
           <h2>Send a Support Request</h2>
-          <form>
+          <form action="https://formsubmit.co/support@barefootcaribou.com" method="POST">
+            <input type="hidden" name="_subject" value="Support Ticket" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <label>
-              Order or Product ID
-              <input type="text" placeholder="Order number or ASIN" />
+              Name
+              <input type="text" name="Name" placeholder="Your name" required />
             </label>
             <label>
               Email
-              <input type="email" placeholder="you@example.com" />
+              <input type="email" name="Email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Product Purchased
+              <select name="Product Purchased" required>
+                <option value="" selected disabled>Select a product</option>
+                <option value="Hair Tools Travel Bag">Hair Tools Travel Bag</option>
+                <option value="Cap Holder">Cap Holder</option>
+                <option value="Magnetic Hat Clip">Magnetic Hat Clip</option>
+                <option value="Over Luggage Organizer">Over Luggage Organizer</option>
+              </select>
+            </label>
+            <label>
+              Order ID
+              <input type="text" name="Order ID" placeholder="Order number" />
             </label>
             <label>
               Issue Summary
-              <textarea rows="4" placeholder="Tell us what you're running into"></textarea>
+              <textarea
+                name="Issue Summary"
+                rows="4"
+                placeholder="Tell us what you're running into"
+                required
+              ></textarea>
             </label>
-            <button class="button solid" type="submit">Submit Request</button>
+            <button class="button solid" type="submit">Submit Ticket</button>
           </form>
         </section>
       </main>

@@ -115,6 +115,7 @@ body {
 }
 
 .support-form input,
+.support-form select,
 .support-form textarea {
   padding: 12px 14px;
   border-radius: 12px;

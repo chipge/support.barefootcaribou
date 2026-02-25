@@ -200,6 +200,31 @@ body {
   margin-bottom: 28px;
 }
 
+.faq-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.faq-jump-nav a {
+  text-decoration: none;
+  color: var(--ink);
+  background: rgba(199, 160, 106, 0.12);
+  border: 1px solid rgba(199, 160, 106, 0.35);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.faq-jump-nav a:hover {
+  background: rgba(199, 160, 106, 0.2);
+}
+
 .faq h2 {
   margin: 0 0 12px;
 }
